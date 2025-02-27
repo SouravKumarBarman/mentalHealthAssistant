@@ -8,6 +8,7 @@ import FindTherapistPage from "./FindTherapist";
 import MoodTrackerPage from "./MoodTracker";
 import GuidedMeditation from "./GuidedMeditation";
 import VoiceDetectionDemo from "./VoiceDetection";
+import Dashboard from "./Dashboard";
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/mood-tracker" element={<MoodTrackerPage />}/>
         <Route path="/meditation" element={<GuidedMeditation />}/>
         <Route path="/voice-detection" element={<VoiceDetectionDemo />}/>
+        <Route path="/dashboard" element={<Dashboard />}/>
       </Routes>
     </Router>
   );
