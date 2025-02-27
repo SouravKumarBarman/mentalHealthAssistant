@@ -15,7 +15,7 @@ async def chat_with_ai(request: ChatRequest):
 
     # LLM Response Generation
     model = genai.GenerativeModel("gemini-1.5-flash")
-    prompt =  f"User: {request.message}"
+    prompt =  f"You are a mental health instuructor and the user messege is: {request.message} give adequate response"
     answer = model.generate_content(prompt)
 
     return {"response": answer.text}
