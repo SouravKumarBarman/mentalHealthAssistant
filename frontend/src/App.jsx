@@ -9,6 +9,7 @@ import MoodTrackerPage from "./MoodTracker";
 import GuidedMeditation from "./GuidedMeditation";
 import VoiceDetectionDemo from "./VoiceDetection";
 import Dashboard from "./Dashboard";
+import VoiceAnalysisPage from "./Voice";
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/meditation" element={<GuidedMeditation />}/>
         <Route path="/voice-detection" element={<VoiceDetectionDemo />}/>
         <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/voice-analysis" element={<VoiceAnalysisPage />} />
       </Routes>
     </Router>
   );
